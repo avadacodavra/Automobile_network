@@ -77,4 +77,8 @@ minifab down
 minifab restart
 ```
 
+# Clear minifab network
+```
+minifab restart
+```
 
