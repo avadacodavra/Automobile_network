@@ -33,11 +33,30 @@ In package.json, add
 "start": "fabric-chaincode-node start"
 ```
 
+### Create index.js to add chaincode initialisation part
+```
+touch index.js
+```
+
+### Create folder to keep the contract file
+```
+mkdir lib
+```
+```
+cd lib
+```
+
+### Create car-contract.js to add functions related to car asset
+```
+touch car-contract.js
+```
+
+
 # Start the minifab network
+#### open new terminal at minifab network directory and execute
 ```
 ./startNetwork.sh
 ```
-
 
 # Deploy the chaincode to the minifab network
 
@@ -79,6 +98,6 @@ minifab restart
 
 # Clear minifab network
 ```
-minifab restart
+minifab cleanup
 ```
 
