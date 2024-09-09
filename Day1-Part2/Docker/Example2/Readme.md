@@ -2,7 +2,7 @@ To run the container use the following command
 
 This works if your are in the same folder and the name of the file docker-compose.yaml
 ```
-docker-compose up -d
+docker compose up -d
 
 ```
 -d stands for detached mode
@@ -14,7 +14,7 @@ docker compose -f [path/to/compose/file] up -d
 ```
 This command is used to validate the docker file
 ```
-docker-compose config
+docker compose config
 
 ```
 
@@ -59,7 +59,7 @@ cat /hyperledger/fabric/newfolder/<file_name>
 
 To bring down the containers which were up using docker-compose files use the following command
 ```
-docker-compose down
+docker compose down
 
 ```
 
