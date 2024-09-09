@@ -65,13 +65,11 @@ class CarContract extends Contract {
 
     }
 
-
     async queryAllCars(ctx) {
         const queryString = {
             selector: {
                 assetType: 'car'
-            },
-            sort: [{ color: 'asc' }]
+            }
         };
 
         let resultIterator = await ctx.stub.getQueryResult(JSON.stringify(queryString));
