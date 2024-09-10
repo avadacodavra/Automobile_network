@@ -36,7 +36,6 @@ class CarContract extends Contract {
         else {
             return `User under the following MSP: ${mspID} cannot perform this action`;
         }
-
     }
 
     async readCar(ctx, carId) {
@@ -62,7 +61,6 @@ class CarContract extends Contract {
         else {
             return `User under the following MSP: ${mspID} cannot perform this action`;
         }
-
     }
 
     async queryAllCars(ctx) {
@@ -126,7 +124,6 @@ class CarContract extends Contract {
         let result = await this._getAllResults(iterator, false)
         let results = {};
         results.Result = result
-        console.log('metadata%%%%%%%%%%%%%%%%%', metadata);
         results.ResponseMetaData = {
             RecordCount: metadata.fetchedRecordsCount,
             Bookmark: metadata.bookmark
@@ -215,7 +212,6 @@ class CarContract extends Contract {
             return `User under following MSP:${mspID} cannot able to perform this action`;
         }
     }
-
 }
 
 module.exports = CarContract;
