@@ -4,6 +4,17 @@ To upgrade the chaincode we have to **increase the version** while deploying the
 
 Follow these steps to upgrade the chaincode
 
+**Note: Before executing these steps make sure you have given necessary permission and created the chaincode folder inside the vars folder.**
+
+If not do these steps before proceeding
+
+```bash
+sudo chmod -R 777 vars/
+
+mkdir -p vars/chaincode/KBA-Automobile/node
+```
+
+
 1. Copy the latest chaincode to minifab network
 
 ```bash
