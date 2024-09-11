@@ -1,7 +1,3 @@
-/*
- * SPDX-License-Identifier: Apache-2.0
- */
-
 'use strict';
 
 const { Contract } = require('fabric-contract-api');
@@ -46,13 +42,11 @@ class OrderContract extends Contract {
             OrderAsset.dealerName = transientData.get('dealerName').toString();
             OrderAsset.assetType = 'order';
 
-
             const collectionName = await getCollectionName(ctx);
             await ctx.stub.putPrivateData(collectionName, orderId, Buffer.from(JSON.stringify(OrderAsset)));
         } else {
             return (`Organisation with mspid ${mspid} cannot perform this action.`)
         }
-
     }
 
     async readOrder(ctx, orderId) {
@@ -67,7 +61,6 @@ class OrderContract extends Contract {
         privateDataString = JSON.parse(privateData.toString());
         return privateDataString;
     }
-
 
     async deleteOrder(ctx, orderId) {
         const mspid = ctx.clientIdentity.getMSPID();
@@ -125,8 +118,6 @@ class OrderContract extends Contract {
         iterator.close()
         return allResult
     }
-
-
 }
 
 module.exports = OrderContract;
