@@ -58,6 +58,8 @@ minifab explorerdown
 
 To view the contents in the couchdb go to this url with these credentials:
 
+http://localhost:7006/_utils/
+
 **userid: admin**
 
 **password: adminpw**
