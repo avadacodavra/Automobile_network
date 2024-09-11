@@ -2,15 +2,15 @@
 
 Note: Open a terminal in the KBA-CHF Folder & Execute the Following Commands
 
-```
+```bash
 curl -sSLO https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/install-fabric.sh && chmod +x install-fabric.sh
 ```
 
-```
+```bash
 ./install-fabric.sh -f '2.5.4' -c '1.5.7'
 ```
 
-```
+```bash
 sudo cp fabric-samples/bin/* /usr/local/bin
 ```
 
@@ -31,7 +31,7 @@ docker ps -a
 
 ### Deploy asset-transfer basic sample chaincode listed in the samples.
 
-```
+```bash
 ./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go -ccl go
 ```
 
@@ -78,7 +78,7 @@ peer chaincode query -C mychannel -n basic -c '{"function":"ReadAsset","Args":["
 Note: Create a New Folder name it as KBA-Automobile within the Fabric samples directory and copy our own  Chaincode folder to KBA-Automobile folder.
 Create collection.json file with  MSPID's as Org1MSP and Org2MSP.
 
-```
+```bash
 ./network.sh deployCC -ccn Automobile -ccp ../KBA-Automobile/Chaincode/ -ccl  go -cccg ../KBA-Automobile/Chaincode/collection-minifab.json
 ```
 
