@@ -1,5 +1,29 @@
 # Private Data Collection
 
+# Start the minifab network
+#### open new terminal at minifab network directory and execute
+```
+./startNetwork.sh
+```
+
+# Deploy the chaincode to the minifab network
+
+```
+sudo chmod -R 777 vars/
+```
+
+```
+mkdir -p vars/chaincode/KBA-Automobile/node
+```
+
+```
+cp -r ../Chaincode/KBA-Automobile/* vars/chaincode/KBA-Automobile/node/
+```
+
+```
+cp vars/chaincode/KBA-Automobile/node/collections.json ./vars/KBA-Automobile_collection_config.json
+```
+
 Note: Execute the following commands from Network folder
 
 1. Copy the latest update chaincode which inclueds the collection file and order contract

@@ -83,7 +83,6 @@ class OrderContract extends Contract {
         }
     }
 
-
     async queryAllOrders(ctx) {
         const queryString = {
             selector: {
@@ -94,9 +93,7 @@ class OrderContract extends Contract {
         let resultIterator = await ctx.stub.getPrivateDataQueryResult(collectionName, JSON.stringify(queryString));
         let result = await this._getAllResults(resultIterator.iterator);
         return JSON.stringify(result)
-
     }
-
 
     async getOrdersByRange(ctx, startKey, endKey) {
         const collectionName = await getCollectionName(ctx);
@@ -110,7 +107,6 @@ class OrderContract extends Contract {
         let resultIterator = await ctx.stub.getPrivateDataQueryResult(collectionName, JSON.stringify(queryString));
         let result = await this._getAllResults(resultIterator.iterator);
         return JSON.stringify(result);
-
     }
 
     async _getAllResults(iterator) {

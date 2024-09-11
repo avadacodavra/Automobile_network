@@ -40,15 +40,15 @@ minifab query -n KBA-Automobile -p '"readCar","car03"'
 MAKE=$(echo -n "BMW" | base64 | tr -d \\n)
 MODEL=$(echo -n "M3" | base64 | tr -d \\n)
 COLOR=$(echo -n "Red" | base64 | tr -d \\n)
-DEALER_NAME=$(echo -n "EVM" | base64 | tr -d \\n)
+DEALER_NAME=$(echo -n "EVMAUTO" | base64 | tr -d \\n)
 ```
 
 ```
-minifab invoke -n KBA-Automobile -p '"OrderContract:createOrder","ord01"' -t '{"make":"'$MAKE'","model":"'$MODEL'","color":"'$COLOR'","dealerName":"'$DEALER_NAME'"}' -o dealer.auto.com
+minifab invoke -n KBA-Automobile -p '"OrderContract:createOrder","ord02"' -t '{"make":"'$MAKE'","model":"'$MODEL'","color":"'$COLOR'","dealerName":"'$DEALER_NAME'"}' -o dealer.auto.com
 ```
 
 ```
-minifab query -n KBA-Automobile -p '"OrderContract:readOrder","ord01"'
+minifab query -n KBA-Automobile -p '"OrderContract:readOrder","ord02"'
 ```
 
 ```
@@ -76,7 +76,7 @@ minifab query -n KBA-Automobile -p '"checkMatchingOrders","car03"'
 ```
 
 ```
-minifab invoke -n KBA-Automobile -p '"matchOrder","car03","ord01"'
+minifab invoke -n KBA-Automobile -p '"matchOrder","car03","ord02"'
 ```
 
 ```

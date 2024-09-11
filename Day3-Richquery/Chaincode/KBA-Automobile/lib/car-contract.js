@@ -112,7 +112,6 @@ class CarContract extends Contract {
         return allResult
     }
 
-
     async getCarsWithPagination(ctx, pageSize, bookMark) {
         const queryString = {
             selector: {
