@@ -16,19 +16,16 @@ sudo chmod -R 777 vars/
 mkdir -p vars/chaincode/KBA-Automobile/node
 ```
 
-```
-cp -r ../Chaincode/KBA-Automobile/* vars/chaincode/KBA-Automobile/node/
-```
-
-```
-cp vars/chaincode/KBA-Automobile/node/collections.json ./vars/KBA-Automobile_collection_config.json
-```
 
 Note: Execute the following commands from Network folder
 
 1. Copy the latest update chaincode which inclueds the collection file and order contract
 ```bash
 cp -r ../Chaincode/KBA-Automobile/* vars/chaincode/KBA-Automobile/node/
+```
+
+```bash
+cp vars/chaincode/KBA-Automobile/node/collections.json ./vars/KBA-Automobile_collection_config.json
 ```
 
 2. Deploy the latest chaincode (if you are updating the chaincode make sure to increase the version or else you can normally deploy with normal version 1.0 itself)
