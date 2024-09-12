@@ -32,7 +32,7 @@ docker ps -a
 ### Deploy asset-transfer basic sample chaincode listed in the samples.
 
 ```bash
-./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go -ccl go
+./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-javascript -ccl javascript
 ```
 
 ## Setup the Org1 Terminal
