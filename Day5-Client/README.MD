@@ -18,6 +18,9 @@ npm install @hyperledger/fabric-gateway
 touch profile.js, client.js, invokeTxn.js, privateTxn.js, queryTxn.js queryPvtTxn.js
 ```
 ## Invoking transactions
+```
 node invokeTxn.js
 node privateTxn.js
 node queryTxn.js
+```
+
