@@ -1,6 +1,6 @@
-const { ClientApplication } = require('./client')
+const { clientApplication } = require('./client')
 
-let userClient = new ClientApplication()
+let userClient = new clientApplication()
 userClient.submitTxn(
     "manufacturer",
     "autochannel",
@@ -9,7 +9,7 @@ userClient.submitTxn(
     "queryTxn",
     "",
     "readCar",
-    "Car-03",
+    "Car-23",
 ).then(result => {
             // Decode the Uint8Array to a string
             const decodedString = new TextDecoder().decode(result);
@@ -17,28 +17,10 @@ userClient.submitTxn(
             // Parse the string as JSON
             const jsonObject = JSON.parse(decodedString);
             
+            console.log("Car details: ")
             // Log the JSON object
             console.log(jsonObject);
 });
 
 
-userClient.submitTxn(
-    "dealer",
-    "autochannel",
-    "KBA-Automobile",
-    "OrderContract",
-    "queryTxn",
-    "",
-    "readOrder",
-    "Order-08",
-).then(result => {
-        // Decode the Uint8Array to a string
-        const decodedString = new TextDecoder().decode(result);
-    
-        // Parse the string as JSON
-        const jsonObject = JSON.parse(decodedString);
-        
-        // Log the JSON object
-        console.log(jsonObject);
-});
 

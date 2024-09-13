@@ -1,6 +1,6 @@
-const { ClientApplication } = require('./client')
+const { clientApplication } = require('./client')
 
-let userClient = new ClientApplication();
+let userClient = new clientApplication();
 
 const transientData = {
     make: Buffer.from("Tata"),
@@ -20,4 +20,5 @@ userClient.submitTxn(
     "Order-09",
 ).then(result => {
     console.log(new TextDecoder().decode(result))
+    console.log("Order successfully created")
 })

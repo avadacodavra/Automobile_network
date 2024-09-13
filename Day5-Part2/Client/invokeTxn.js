@@ -1,6 +1,6 @@
-const { ClientApplication } = require('./client');
+const { clientApplication } = require('./client');
 
-let userClient = new ClientApplication();
+let userClient = new clientApplication();
 userClient.submitTxn(
     "manufacturer",
     "autochannel",
@@ -9,7 +9,7 @@ userClient.submitTxn(
     "invokeTxn",
     "",
     "createCar",
-    "Car-13",
+    "Car-33",
     "Tata",
     "Nexon",
     "White",
@@ -17,4 +17,5 @@ userClient.submitTxn(
     "Manufacturer-2"
 ).then(result => {
     console.log(new TextDecoder().decode(result))
+    console.log("Car successfully created")
 })

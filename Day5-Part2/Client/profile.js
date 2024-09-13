@@ -1,29 +1,29 @@
 let profile = {
     manufacturer: {
-        "cryptoPath": "../Network/vars/keyfiles/peerOrganizations/manufacturer.auto.com",
-        "keyDirectoryPath": "../Network/vars/keyfiles/peerOrganizations/manufacturer.auto.com/users/Admin@manufacturer.auto.com/msp/keystore",
-        "certPath": "../Network/vars/keyfiles/peerOrganizations/manufacturer.auto.com/users/Admin@manufacturer.auto.com/msp/signcerts/Admin@manufacturer.auto.com-cert.pem",
-        "tlsCertPath": "../Network/vars/keyfiles/peerOrganizations/manufacturer.auto.com/users/Admin@manufacturer.auto.com/tls/ca.crt",
-        "peerEndpoint": "localhost:7003",
-        "peerHostAlias": "peer1.manufacturer.auto.com",
+        "cryptoPath": "../Automobile-Network/organizations/peerOrganizations/manufacturer.auto.com", 
+		"keyDirectoryPath": "../Automobile-Network/organizations/peerOrganizations/manufacturer.auto.com/users/User1@manufacturer.auto.com/msp/keystore/",
+        "certPath":     "../Automobile-Network/organizations/peerOrganizations/manufacturer.auto.com/users/User1@manufacturer.auto.com/msp/signcerts/cert.pem",
+		"tlsCertPath":  "../Automobile-Network/organizations/peerOrganizations/manufacturer.auto.com/peers/peer0.manufacturer.auto.com/tls/ca.crt",
+		"peerEndpoint": "localhost:7051",
+		"peerHostAlias":  "peer0.manufacturer.auto.com",
         "mspId": "manufacturer-auto-com"
     },
     dealer: {
-        "cryptoPath": "../Network/vars/keyfiles/peerOrganizations/dealer.auto.com",
-        "keyDirectoryPath": "../Network/vars/keyfiles/peerOrganizations/dealer.auto.com/users/Admin@dealer.auto.com/msp/keystore",
-        "certPath": "../Network/vars/keyfiles/peerOrganizations/dealer.auto.com/users/Admin@dealer.auto.com/msp/signcerts/Admin@dealer.auto.com-cert.pem",
-        "tlsCertPath": "../Network/vars/keyfiles/peerOrganizations/dealer.auto.com/users/Admin@dealer.auto.com/tls/ca.crt",
-        "peerEndpoint": "localhost:7004",
-        "peerHostAlias": "peer1.dealer.auto.com",
+        "cryptoPath": "../Automobile-Network/organizations/peerOrganizations/dealer.auto.com", 
+		"keyDirectoryPath": "../Automobile-Network/organizations/peerOrganizations/dealer.auto.com/users/User1@dealer.auto.com/msp/keystore/",
+        "certPath":     "../Automobile-Network/organizations/peerOrganizations/dealer.auto.com/users/User1@dealer.auto.com/msp/signcerts/cert.pem",
+		"tlsCertPath":  "../Automobile-Network/organizations/peerOrganizations/dealer.auto.com/peers/peer0.dealer.auto.com/tls/ca.crt",
+		"peerEndpoint": "localhost:9051",
+		"peerHostAlias":  "peer0.dealer.auto.com",
         "mspId": "dealer-auto-com"
     },
     mvd: {
-        "cryptoPath": "../Network/vars/keyfiles/peerOrganizations/mvd.auto.com",
-        "keyDirectoryPath": "../Network/vars/keyfiles/peerOrganizations/mvd.auto.com/users/Admin@mvd.auto.com/msp/keystore",
-        "certPath": "../Network/vars/keyfiles/peerOrganizations/mvd.auto.com/users/Admin@mvd.auto.com/msp/signcerts/Admin@mvd.auto.com-cert.pem",
-        "tlsCertPath": "../Network/vars/keyfiles/peerOrganizations/mvd.auto.com/users/Admin@mvd.auto.com/tls/ca.crt",
-        "peerEndpoint": "localhost:7005",
-        "peerHostAlias": "peer1.mvd.auto.com",
+        "cryptoPath": "../Automobile-Network/organizations/peerOrganizations/mvd.auto.com", 
+		"keyDirectoryPath": "../Automobile-Network/organizations/peerOrganizations/mvd.auto.com/users/User1@mvd.auto.com/msp/keystore/",
+        "certPath":     "../Automobile-Network/organizations/peerOrganizations/mvd.auto.com/users/User1@mvd.auto.com/msp/signcerts/cert.pem",
+		"tlsCertPath":  "../Automobile-Network/organizations/peerOrganizations/mvd.auto.com/peers/peer0.mvd.auto.com/tls/ca.crt",
+		"peerEndpoint": "localhost:9051",
+		"peerHostAlias":  "peer0.mvd.auto.com",
         "mspId": "mvd-auto-com"
     }
 }
