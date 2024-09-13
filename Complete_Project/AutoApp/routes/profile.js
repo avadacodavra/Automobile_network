@@ -22,7 +22,7 @@ let profile = {
 		"keyDirectoryPath": "../Automobile-Network/organizations/peerOrganizations/mvd.auto.com/users/User1@mvd.auto.com/msp/keystore/",
         "certPath":     "../Automobile-Network/organizations/peerOrganizations/mvd.auto.com/users/User1@mvd.auto.com/msp/signcerts/cert.pem",
 		"tlsCertPath":  "../Automobile-Network/organizations/peerOrganizations/mvd.auto.com/peers/peer0.mvd.auto.com/tls/ca.crt",
-		"peerEndpoint": "localhost:9051",
+		"peerEndpoint": "localhost:11051",
 		"peerHostAlias":  "peer0.mvd.auto.com",
         "mspId": "mvd-auto-com"
     }
