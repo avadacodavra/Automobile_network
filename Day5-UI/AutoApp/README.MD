@@ -27,6 +27,11 @@ Go inside the AutoApp folder with this command
 ```bash
 cd AutoApp
 ```
+Install all the dependencies 
+
+```bash
+npm install
+```
 
 --- 
 
@@ -51,6 +56,14 @@ Here only we are adding the logic for index.js and users.js. (Same code as invok
 ---
 
 **Now finally copy the code for app.js** where it will import the other files and start the application
+
+Now to run application execute this commadn
+
+```bash
+npm start
+```
+
+**The application will be started on localhost:3000**
 
 ---
 
